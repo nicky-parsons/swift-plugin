@@ -1,11 +1,11 @@
 {
-  "name": "swift-xcode-multiplatform",
+  "name": "parsons",
   "owner": {
-    "name": "Claude Code Community"
+    "name": "Parsons"
   },
   "plugins": [
     {
-      "name": "swift-xcode-multiplatform",
+      "name": "swift-plugin",
       "source": ".",
       "description": "Comprehensive Swift 6 and multi-platform Apple development: 23 skills covering SwiftUI, testing, debugging, and deployment for all Apple platforms"
     }
