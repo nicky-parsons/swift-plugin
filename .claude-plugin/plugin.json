@@ -1,8 +1,8 @@
 {
-  "name": "swift-xcode-multiplatform",
+  "name": "swift-plugin",
   "description": "Comprehensive Swift 6 and multi-platform Apple development assistant with 23 specialized skills, 6 commands, and automatic project detection for iOS, iPadOS, macOS, watchOS, tvOS, and visionOS",
   "version": "1.0.0",
   "author": {
-    "name": "Claude Code Community"
+    "name": "Parsons"
   }
 }
