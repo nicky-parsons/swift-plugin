@@ -54,25 +54,72 @@ Unlike traditional documentation, Claude with this plugin:
 - Active Apple Developer account (for deployment skills)
 - Xcode installed (for development)
 
-### Install from Marketplace
+### Install from GitHub
 
-```bash
-# Add the marketplace (when available)
-/plugin marketplace add <marketplace-name>
+Once this plugin is published to GitHub, you can install it directly:
+
+```shell
+# In Claude Code, add the marketplace
+/plugin marketplace add user/swift-plugin
 
 # Install the plugin
-/plugin install swift-xcode-multiplatform@<marketplace-name>
+/plugin install swift-xcode-multiplatform@swift-xcode-multiplatform
 ```
 
-### Manual Installation
+After installation, restart Claude Code to activate the plugin.
+
+### Install from Local Path (Development)
+
+For local development and testing:
 
 ```bash
 # Clone the repository
 git clone https://github.com/user/swift-plugin.git
-
-# Link to Claude Code plugins directory
-ln -s $(pwd)/swift-plugin ~/.claude/plugins/swift-xcode-multiplatform
+cd swift-plugin
 ```
+
+Then in Claude Code:
+
+```shell
+# Add the local marketplace
+/plugin marketplace add /path/to/swift-plugin
+
+# Install the plugin
+/plugin install swift-xcode-multiplatform@swift-xcode-multiplatform
+```
+
+Select "Install now" when prompted, then restart Claude Code.
+
+### Verify Installation
+
+After restarting Claude Code:
+
+1. **Check commands**: Run `/help` to see the 6 new Swift commands
+2. **Test a command**: Try `/new-swiftui-view` to verify it works
+3. **View plugin details**: Use `/plugin` → "Manage Plugins" to see installed features
+
+### Team Setup (Optional)
+
+To automatically install this plugin for all team members working on a Swift project, add it to your repository's `.claude/settings.json`:
+
+```json
+{
+  "marketplaces": [
+    {
+      "url": "user/swift-plugin"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "swift-xcode-multiplatform",
+      "marketplace": "swift-xcode-multiplatform",
+      "enabled": true
+    }
+  ]
+}
+```
+
+When team members trust your repository folder, Claude Code will automatically install the plugin.
 
 ## Usage
 
@@ -256,6 +303,7 @@ Claude: [Activates deployment-essentials skill]
 ```
 swift-xcode-plugin/
 ├── .claude-plugin/
+│   ├── marketplace.json           # Marketplace metadata
 │   └── plugin.json                # Plugin metadata
 ├── skills/                        # 23 autonomous skills
 │   ├── fundamentals/             # Swift 6, cross-platform, memory, lifecycle

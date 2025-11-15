@@ -1,26 +1,8 @@
 {
   "name": "swift-xcode-multiplatform",
-  "description": "Expert Swift 6 and multi-platform Apple development skills: SwiftUI, testing, debugging, deployment guidance for iOS, macOS, watchOS, tvOS, and visionOS",
+  "description": "Comprehensive Swift 6 and multi-platform Apple development assistant with 23 specialized skills, 6 commands, and automatic project detection for iOS, iPadOS, macOS, watchOS, tvOS, and visionOS",
   "version": "1.0.0",
   "author": {
-    "name": "Claude Code Community",
-    "email": "community@anthropic.com"
-  },
-  "homepage": "https://github.com/user/swift-plugin",
-  "repository": "https://github.com/user/swift-plugin",
-  "license": "MIT",
-  "keywords": [
-    "swift",
-    "swift6",
-    "swiftui",
-    "xcode",
-    "ios",
-    "macos",
-    "watchos",
-    "tvos",
-    "visionos",
-    "testing",
-    "multiplatform",
-    "apple"
-  ]
+    "name": "Claude Code Community"
+  }
 }
