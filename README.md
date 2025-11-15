@@ -96,9 +96,20 @@ ln -s $(pwd)/swift-plugin ~/.claude/plugins/swift-xcode-multiplatform
 
 ## Usage
 
-The plugin works automatically - Claude invokes skills based on your conversation context. No commands needed!
+The plugin works in two ways: **automatic skill activation** based on context, and **user commands** for common tasks.
 
-### Example Interactions
+### User Commands
+
+Invoke these commands by typing them in your conversation:
+
+- `/new-swiftui-view` - Scaffold a new SwiftUI view with proper state management
+- `/review-memory` - Analyze code for memory leaks and retain cycles
+- `/optimize-performance` - Performance analysis and optimization recommendations
+- `/add-tests` - Generate comprehensive test coverage for existing code
+- `/fix-accessibility` - Accessibility audit and improvements for VoiceOver and Dynamic Type
+- `/setup-storekit` - Complete in-app purchase infrastructure setup
+
+### Automatic Skills & Example Interactions
 
 **Implementing Swift 6 concurrency:**
 ```
@@ -218,17 +229,34 @@ Each skill follows consistent patterns for maximum effectiveness:
 5. **Best practices** - Actionable, specific recommendations
 6. **Related skills** - Navigate the knowledge graph
 
-## Future Phases
+## Plugin Features
 
-### Phase 3: Polish & Commands (Planned)
-- User-invoked commands for common tasks
-  - `/new-swiftui-view` - Scaffold new SwiftUI views
-  - `/review-memory` - Analyze for memory leaks
-  - `/optimize-performance` - Performance analysis
-- Session hooks for project setup
-- Reference documentation and code snippets library
-- Migration guides (UIKit → SwiftUI, Combine → async/await)
-- Advanced search and navigation commands
+### ✅ Complete Implementation (All 3 Phases)
+
+**Phase 1: Core Skills** (10 skills)
+- Essential foundation covering 80% of use cases
+- Swift 6, SwiftUI, testing, debugging, deployment
+
+**Phase 2: Specialized Skills** (13 skills)
+- Advanced frameworks (Combine, MapKit, StoreKit, UIKit/AppKit, RealityKit)
+- Performance optimization and profiling
+- Security and privacy patterns
+- Platform-specific UI (iOS, macOS, watchOS)
+- Accessibility implementation
+
+**Phase 3: Commands & Polish** ✨
+- 6 user-invoked commands for common tasks
+- Session hook for Swift project detection
+- Quick reference guides
+- Complete documentation
+
+### What's Next?
+
+The plugin is feature-complete and production-ready! Future enhancements could include:
+- Additional specialized skills (ARKit deep-dive, Core ML, HealthKit)
+- More automation commands
+- IDE integration improvements
+- Community-contributed skills
 
 ## Contributing
 
