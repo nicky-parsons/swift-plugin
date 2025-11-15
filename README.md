@@ -20,54 +20,13 @@ This plugin gives Claude deep expertise in Swift and Apple platform development 
 
 ```shell
 # In Claude Code, add the marketplace
-/plugin marketplace add user/swift-plugin
+/plugin marketplace add nicky-parsons/swift-plugin
 
 # Install the plugin
-/plugin install swift-xcode-multiplatform@swift-xcode-multiplatform
+/plugin install swift-plugin
 ```
 
 Restart Claude Code after installation.
-
-### Install Locally (Development)
-
-```bash
-# Clone and navigate to the repository
-git clone https://github.com/user/swift-plugin.git
-cd swift-plugin
-```
-
-In Claude Code:
-
-```shell
-# Add the local marketplace
-/plugin marketplace add /path/to/swift-plugin
-
-# Install the plugin
-/plugin install swift-xcode-multiplatform@swift-xcode-multiplatform
-```
-
-Restart Claude Code after installation.
-
-### Team Setup
-
-Add to your project's `.claude/settings.json` to automatically install for your team:
-
-```json
-{
-  "marketplaces": [
-    {
-      "url": "user/swift-plugin"
-    }
-  ],
-  "plugins": [
-    {
-      "name": "swift-xcode-multiplatform",
-      "marketplace": "swift-xcode-multiplatform",
-      "enabled": true
-    }
-  ]
-}
-```
 
 ## How to Use
 
@@ -194,14 +153,6 @@ Available commands:
 - **Swift**: 5.9+ (6.0+ for Swift 6 features)
 - **macOS**: 12.0+
 
-## Reference Documentation
-
-The plugin includes quick reference guides:
-
-- **QUICK_REFERENCE.md** - Common patterns and code snippets
-- **SKILL_GUIDE.md** - When to use each skill
-- **PLAN.md** - Complete plugin architecture and design
-
 ## Contributing
 
 Contributions welcome! To add a skill or improve existing ones:
@@ -213,8 +164,8 @@ Contributions welcome! To add a skill or improve existing ones:
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/user/swift-plugin/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/user/swift-plugin/discussions)
+- **Issues**: [GitHub Issues](https://github.com/nicky-parsons/swift-plugin/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/nicky-parsons/swift-plugin/discussions)
 
 ## License
 
