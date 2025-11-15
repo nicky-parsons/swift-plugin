@@ -1,0 +1,8 @@
+{
+  "session-start": {
+    "description": "Detect Swift/Xcode projects and provide helpful context on session start",
+    "enabled": true,
+    "command": "bash",
+    "args": ["hooks/session-start.sh"]
+  }
+}
