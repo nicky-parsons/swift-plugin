@@ -4,9 +4,11 @@ A comprehensive Claude Code plugin that transforms Claude into an expert Swift a
 
 ## Overview
 
-This plugin provides **10 essential skills** covering the complete Apple development lifecycle. Claude autonomously activates these skills based on your development context, providing expert guidance exactly when you need it.
+This plugin provides **23 comprehensive skills** covering the complete Apple development lifecycle from fundamentals to advanced frameworks. Claude autonomously activates these skills based on your development context, providing expert guidance exactly when you need it.
 
-Built following the research and architecture outlined in [PLAN.md](PLAN.md), this plugin implements **Phase 1: Core Skills** - the foundation that covers 80% of Apple development use cases.
+Built following the research and architecture outlined in [PLAN.md](PLAN.md), this plugin implements:
+- **Phase 1: Core Skills** (10 skills) - Essential foundation covering 80% of use cases
+- **Phase 2: Specialized Skills** (13 skills) - Advanced frameworks, performance, security, and platform-specific patterns
 
 ## What This Plugin Provides
 
@@ -19,25 +21,50 @@ Unlike traditional documentation, Claude with this plugin:
 - **Explains the why** - Not just what to do, but why it matters
 - **Covers all platforms** - iOS, iPadOS, macOS, watchOS, tvOS, visionOS
 
-### 10 Essential Skills
+### Phase 1: Core Skills (10 Essential Skills)
 
-#### Fundamentals
+#### Fundamentals (4 skills)
 1. **swift-6-essentials** - Swift 6 language features, data race safety, typed throws, actor isolation, Sendable protocol, and migration strategies
 2. **cross-platform-patterns** - Build apps for multiple Apple platforms with conditional compilation, platform abstractions, and adaptive UI
 3. **memory-management** - ARC, weak/unowned references, retain cycles, leak prevention, and Memory Graph Debugger
 4. **app-lifecycle** - App states, scene phases, background tasks, state preservation across all platforms
 
-#### Frameworks
+#### Frameworks (2 skills)
 5. **swiftui-essentials** - Declarative UI with proper state management (@State, @Binding, @Observable), view composition, and performance
 6. **networking-patterns** - URLSession with async/await, REST APIs, JSON decoding, error handling, authentication
 
-#### Testing & Debugging
+#### Testing & Debugging (2 skills)
 7. **testing-fundamentals** - Swift Testing framework and XCTest, TDD practices, mocking, UI testing, async testing
 8. **debugging-basics** - Xcode debugging tools, breakpoints, LLDB commands, View Debugger, crash analysis
 
-#### Deployment
+#### Deployment (2 skills)
 9. **data-persistence** - SwiftData, Core Data, UserDefaults, Keychain, file storage, CloudKit integration
 10. **deployment-essentials** - App Store submission, code signing, provisioning, TestFlight, review guidelines
+
+### Phase 2: Specialized Skills (13 Advanced Skills)
+
+#### Advanced Frameworks (5 skills)
+11. **combine-reactive** - Reactive programming with Combine: publishers, subscribers, operators, subjects, schedulers, and SwiftUI integration
+12. **mapkit-location** - Maps and location services: MapKit, CoreLocation, annotations, geocoding, routing, geofencing
+13. **storekit-monetization** - In-app purchases and subscriptions: StoreKit 2, products, transactions, subscriptions, App Store Server API
+14. **uikit-appkit-advanced** - Advanced UIKit/AppKit patterns: custom view controllers, collection views, coordinators, custom transitions
+15. **realitykit-spatial** - Spatial computing with RealityKit: 3D models, entities, visionOS, AR experiences, spatial audio
+
+#### Performance & Optimization (2 skills)
+16. **instruments-profiling** - Performance profiling with Instruments: Time Profiler, Allocations, Leaks, Network, Energy Log
+17. **performance-optimization** - App optimization: launch time, memory usage, battery efficiency, scrolling performance, Core Data
+
+#### Security & Privacy (2 skills)
+18. **security-patterns** - Security implementation: CryptoKit, Keychain, certificate pinning, biometric authentication, secure data handling
+19. **privacy-compliance** - Privacy requirements: Privacy Manifests, App Tracking Transparency, permissions, privacy labels
+
+#### Platform-Specific UI (3 skills)
+20. **ios-ui-patterns** - iOS-specific patterns: navigation, tab bars, modals, sheets, swipe actions, context menus
+21. **macos-ui-patterns** - macOS-specific patterns: menu bars, toolbars, preferences windows, keyboard shortcuts, multiple windows
+22. **watchos-complications** - watchOS complications: WidgetKit, timeline providers, complication families, watch face integration
+
+#### Accessibility (1 skill)
+23. **accessibility-implementation** - Accessibility features: VoiceOver, Dynamic Type, labels, hints, assistive technologies
 
 ## Installation
 
@@ -193,18 +220,15 @@ Each skill follows consistent patterns for maximum effectiveness:
 
 ## Future Phases
 
-### Phase 2: Specialized Skills (Planned)
-- Advanced framework deep-dives (MapKit, Combine, UIKit/AppKit)
-- Instruments profiling and performance optimization
-- Security and privacy patterns
-- Platform-specific UI patterns
-- Accessibility implementation
-
 ### Phase 3: Polish & Commands (Planned)
-- User-invoked commands (/new-swiftui-view, /review-memory)
+- User-invoked commands for common tasks
+  - `/new-swiftui-view` - Scaffold new SwiftUI views
+  - `/review-memory` - Analyze for memory leaks
+  - `/optimize-performance` - Performance analysis
 - Session hooks for project setup
-- Reference documentation
-- Migration guides
+- Reference documentation and code snippets library
+- Migration guides (UIKit → SwiftUI, Combine → async/await)
+- Advanced search and navigation commands
 
 ## Contributing
 
