@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "swift-plugin",
-      "source": ".",
+      "source": "./",
       "description": "Comprehensive Swift 6 and multi-platform Apple development: 23 skills covering SwiftUI, testing, debugging, and deployment for all Apple platforms"
     }
   ]
